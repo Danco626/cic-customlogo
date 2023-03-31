@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="{{locale}}">
+  <head>
+    {%- auth0:head -%}
+    <style>
+      {% if transaction.params.ext-logo %}
+        #custom-prompt-logo {
+          background-image: url('{{ transaction.params.ext-logo }}');
+        }
+      {% endif %}
+    </style>
+  </head>
+  <body class="_widget-auto-layout _use-custom-prompt-logo">
+    {%- auth0:widget -%}  
+  </body>
+  </html>
