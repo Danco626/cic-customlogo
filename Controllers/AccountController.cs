@@ -14,7 +14,7 @@ namespace SampleMvcApp.Controllers
     {
         public async Task Login(string returnUrl = "/", string originator = "null")
         {
-            var logoUrl = "https://companieslogo.com/img/orig/OKTA-8b49bf18.png?t=1669879493";
+            var logoUrl = "https://1000logos.net/wp-content/uploads/2017/08/Dunkin-Donuts-Logo.png";
 
             //build logo URL based on originator 
             switch(originator)

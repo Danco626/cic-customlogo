@@ -1,12 +1,17 @@
 # Description  
 This example is based on the [Auth0 quickstart](https://auth0.com/docs/quickstart/webapp/aspnet-core) and has been modified to pass a custom query parameter containing a logo URL in the redirect to [/authorize](https://auth0.com/docs/api/authentication#authorization-code-flow).  
 
-## Universal Login
+## New Universal Login
 The universal login (UL) script can be found [here](./Auth0/NewULScript.html). It has been modified to accept the `ext-logo` [custom query parameter](https://auth0.com/docs/customize/universal-login-pages/universal-login-page-templates#custom-query-parameters) and set it as the logo using [CSS customization](https://auth0.com/docs/customize/universal-login-pages/universal-login-page-templates#css-customization).  
 
 The UL script can be updated via a PUT request to [/api/v2/branding/template/universal-login](https://auth0.com/docs/api/management/v2#!/Branding/put_universal_login).  
 
 **Note:**  A [custom domain](https://auth0.com/docs/customize/custom-domains) is required before the updated template takes effect  
+
+## Classic Universal Login (lock.js)
+The classic universal login w/lock script can be found [here](./Auth0/ClassicULScriptLock.html). It has been modified to accept the `ext-logo` [custom query parameter] and set it to the logo. Only line 59 differs from the default login script.
+
+  `logo: config.extraParams["ext-logo"]`
 
 
 ## Changes  
